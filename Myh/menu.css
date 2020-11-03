@@ -1,0 +1,271 @@
+
+       body {
+            margin: 0;
+         
+        }
+        
+        .topHeader {
+
+            /* position: fixed;
+            top: 0px;
+            width: 100vw; */
+
+            /* background-color: #1F5371; */
+            /* background-color: #629ebc; */
+            /* padding: 10px 10px; */
+
+            background-color: #9eb3c2;
+            overflow: hidden;
+            padding-top: 10px;
+
+        }
+
+        /* 
+        main {
+
+            margin: 10px 10px;
+        } */
+
+        .menubar a {
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            text-transform: uppercase;
+            font-size: 9px;
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+            float: left;
+            display: block;
+            text-align: center;
+            margin: 0px -32px;
+
+        }
+
+        .minimenu {
+            /* Search box and language selection etc. */
+            float: right;
+            margin-left: -4px;
+        }
+
+
+
+        .minimenu a {
+
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+            text-transform: uppercase;
+            font-size: 9px;
+            color: black;
+            font-weight: bolder;
+            text-decoration: none;
+            float: none;
+            display: inline;
+            text-align: none;
+
+            /* resets menubar a-tag style  */
+            margin: 0px 0px;
+            padding: 0px;
+        }
+
+
+        .extra {
+            padding-top: 6px;
+        }
+
+        .extra a:hover {
+
+            filter: invert(0.5);
+        }
+
+
+        /* Do not show hamburger menu icon when in large screen mode */
+        .menubar .menuicon {
+
+            display: none;
+        }
+
+
+        /* Size of menu item icons */
+        .menubar img {
+
+            display: inline-block;
+            height: 26px;
+        }
+
+        /* Invert when hovering menu items - (not logo)*/
+        .menubar .icon:hover figure {
+            filter: invert(0.5);
+        }
+
+        #find {
+            /* find button */
+            height: 15px;
+            background-color: white;
+            border: 1px solid grey;
+            border-radius: 9%;
+            padding: 2px 4px;
+            margin-left: -40px;
+            position: relative;
+            top: 2px;
+        }
+
+        #find:hover {
+
+            border: 1px solid black;
+        }
+
+
+        .search {
+
+            /* position: relative;
+            top: -15px; */
+            margin-top: -15px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        input[type=search] {
+
+            width: 120px;
+
+        }
+
+
+
+        /* Change to drop down menu for small screens */
+        @media screen and (max-width: 768px) {
+
+            /* Always show logo i.e. hide all other menu items when small screen's drop down is not yet activated */
+            .menubar a:not(:first-child) {
+                display: none;
+            }
+
+            /* do not show search box until drop down is active */
+            .search {
+                display: none;
+            }
+
+            /* Activate menu button - hamburger icon */
+            .menubar a.menuicon {
+
+                display: block;
+                float: right;
+                padding-right: 10px;
+                padding-top: 5px;
+                margin: 0px 0px;
+
+            }
+
+            /* Still show menu icon top right when drop down is active */
+            .menubar.ddMenuActive .menuicon {
+
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding-top: 15px;
+            }
+
+            /* When drop down menu is active - show menu items with border between each item
+               and text left aligned */
+
+            .menubar.ddMenuActive a {
+                float: none;
+                display: block;
+                text-align: left;
+                border-top: 1px solid black;
+            }
+
+            /* Centers menu items vertically when drop down is active */
+            .menubar.ddMenuActive figure {
+
+                display: flex;
+                align-items: center;
+            }
+
+            /* Font size and padding when drop down menu is active (shown) */
+            .menubar.ddMenuActive figcaption {
+
+                font-size: 12px;
+                padding: 0px 8px;
+            }
+
+            /* No border on top bar - i.e the first a-tag which holds the logo */
+            .menubar.ddMenuActive a:first-child {
+
+                border: none;
+            }
+
+
+            /* Thick bottom border second last child i.e last visible item in small screen drop down menu*/
+            /* .menubar.ddMenuActive a:nth-last-child(2) {
+
+                border-bottom: 2px solid black;
+            } 
+            */
+
+            /* No bottom border on last child i.e. the menu button shown top right */
+            .menubar.ddMenuActive a:last-child {
+
+                border: none;
+            }
+
+
+            .extra {
+                /* for now hide extra links in drop down - normally shown above search box in large screen navbar */
+
+                display: none;
+            }
+
+            .minimenu {
+
+                display: block;
+                float: none;
+            }
+
+
+
+            .menubar.ddMenuActive .search {
+
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 12px;
+                border-top: 1px solid black;
+                border-bottom: 2px solid black;
+
+            }
+
+            .menubar.ddMenuActive .search::before {
+
+                display: block;
+                content: ' ';
+                background-image: url('images/find.svg');
+                background-size: 26px 26px;
+                height: 26px;
+                width: 26px;
+            }
+
+            .menubar.ddMenuActive #find {
+
+
+                position: relative;
+                top: 0px;
+            }
+
+
+            .menubar.ddMenuActive #find:hover {
+
+                border: 1px solid black;
+                position: relative;
+                top: 0px;
+
+            }
+
+            .menubar.ddMenuActive input[type=search] {
+
+                margin-left: 8px;
+                width: 140px;
+
+            }
+        }
+   
