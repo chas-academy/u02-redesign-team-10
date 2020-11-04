@@ -1,19 +1,74 @@
-ul {
-  text-align: left;
-  background-color: rgb(157, 223, 219);
-}
-ul > li {
-  display: inline-block;
-  padding: 10px 12px;
-}
-ul > li > a {
-  color: black;
-  font-family: "Helvetica", Arial, sans-serif;
-  text-decoration: none;
-}
-.navbar {
-  position: relative;
-  /* default colors + transition */
 
-  transition: all 0.3s ease-out;
+
+/* background-color: #1F5371; */
+/* background-color: #629ebc; */
+
+
+.grid-container {
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+
 }
+
+.oddBox{
+
+    background-color: #1F5371; 
+    color:black;
+    padding: 20px 20px;
+}
+
+.evenBox{
+
+    background-color: #629ebc;
+    color:black;
+    padding: 20px 20px;
+}
+
+.innerBox{
+
+  background-color: lightgrey;
+  display:flex;
+  flex-direction: row;
+ 
+  padding: 10px;
+
+}
+
+.item{
+
+  padding:20px;
+  
+}
+
+.cimg {
+
+  /* max-width: calc(100% - 60px); */
+  width: 400px;
+  height: auto;
+  border: 1px solid darkgrey;
+}
+
+
+@media screen and (max-width: 768px) {
+  .innerBox{
+
+    background-color: lightgrey;
+    display:flex;
+    flex-direction: column-reverse;
+    
+    
+    padding: 10px;
+
+  }
+  .cimg {
+    width:260px;
+  /* max-width: calc(100% - 60px); */
+  height: auto;
+  border: 1px solid darkgrey;
+}
+
+}
+
+
