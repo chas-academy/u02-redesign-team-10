@@ -25,7 +25,11 @@
 
             margin: 10px 10px;
         } */
-
+        figure {
+            overflow:hidden;
+            margin:0px;
+            padding:10px;
+         }
         .menubar a {
             font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
             text-transform: uppercase;
@@ -36,7 +40,8 @@
             float: left;
             display: block;
             text-align: center;
-            margin: 0px -32px;
+            margin: 0px;
+            padding: 0px;
 
         }
 
@@ -125,7 +130,7 @@
 
         input[type=search] {
 
-            width: 120px;
+             width: 149px;
 
         }
 
