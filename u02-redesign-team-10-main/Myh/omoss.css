@@ -1,0 +1,186 @@
+
+
+/* background-color: #1F5371; */
+/* background-color: #629ebc; */
+
+.cbreadcrumb{ 
+  
+  height:20px;
+  padding-left:16px;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+}
+
+.oddBox{
+
+    background-color: #1F5371; 
+    color:black;
+    padding: 20px 20px;
+}
+
+.evenBox{
+
+    background-color: #629ebc;
+    color:black;
+    padding: 20px 20px;
+}
+
+.innerBox{
+
+  background-color: lightgrey;
+  display:flex;
+  flex-direction: row;
+ 
+  padding: 10px;
+
+}
+
+.item{
+
+  padding:20px;
+  
+}
+
+.cimg {
+
+  /* max-width: calc(100% - 60px); */
+  width: 400px;
+  height: auto;
+  border: 1px solid darkgrey;
+}
+
+.backgr { background-color:lightgrey;}
+
+.plax {
+  /* The image used */
+  background-image: url(images/omoss3.png);
+
+  /* Full height */
+   min-height: 500px; 
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 400px  225px ;
+}
+
+form{ 
+  
+  border: 1px solid grey;
+  padding: 16px;
+  border-radius: 1%;
+  background-color:#9eb3c2;
+  width: 370px;
+
+  margin-right: 100px;
+}
+input[type=text] {
+   width: 360px;
+   height: 32px;
+}
+
+input[type=email] {
+   width: 360px;
+   height: 32px;
+}
+
+button {
+   width: 370px;
+   height: 32px;
+   border:1px solid darkgrey;
+}
+textarea {
+  width: 360px;
+  height: 150px;
+}
+
+iframe{
+  width:400px;
+  height:auto;
+  border: 1px solid grey;
+  border-radius: 2px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .innerBox{
+
+      background-color: lightgrey;
+      display:flex;
+      flex-direction: column-reverse;
+      
+      
+      padding: 10px;
+
+    }
+
+    .cimg {
+        width:260px;
+        /* max-width: calc(100% - 60px); */
+        height: auto;
+        border: 1px solid darkgrey;
+    }
+
+
+
+  form{ 
+    
+    border: 1px solid grey;
+    padding: 16px;
+    border-radius: 1%;
+    background-color:white;
+    width: 250px;
+
+    
+  }
+
+  input[type=text] {
+    width: 240px;
+    height: 32px;
+  }
+
+  input[type=email] {
+    width: 240px;
+    height: 32px;
+  }
+
+  button {
+    width: 242px;
+    height: 32px;
+    border:1px solid darkgrey;
+  }
+
+  textarea {
+
+      width: 240px;
+      height: 150px;
+  }
+
+  iframe{
+
+      width:270px;
+      height:auto;
+  }
+
+  .plax {
+    /* The image used */
+    background-image: url(images/omoss3.png);
+
+    /* Full height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 285px  160px ;
+  }
+}
