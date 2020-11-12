@@ -78,32 +78,32 @@ form{
   padding: 16px;
   border-radius: 1%;
   background-color:#9eb3c2;
-  width: 370px;
+  width: 250px;
 
-  margin-right: 100px;
+  margin-right: 60px;
 }
 input[type=text] {
-   width: 360px;
+   width: 240px;
    height: 32px;
 }
 
 input[type=email] {
-   width: 360px;
+   width: 240px;
    height: 32px;
 }
 
 button {
-   width: 370px;
+   width: 250px;
    height: 32px;
    border:1px solid darkgrey;
 }
 textarea {
-  width: 360px;
+  width: 240px;
   height: 150px;
 }
 
 iframe{
-  width:400px;
+  width:250px;
   height:auto;
   border: 1px solid grey;
   border-radius: 2px;
