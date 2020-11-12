@@ -5,13 +5,11 @@ a {
 }
 
 .cbreadcrumb {
-
   height: 20px;
   padding-left: 16px;
 }
 
 .grid-container {
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto;
@@ -19,38 +17,29 @@ a {
 }
 
 .oddBox {
-
   background-color: #1F5371;
   color: black;
   padding: 20px 20px;
 }
 
 .evenBox {
-
   background-color: #629ebc;
   color: black;
   padding: 20px 20px;
 }
 
 .innerBox {
-
   background-color: lightgrey;
   display: flex;
   flex-direction: row;
-
   padding: 10px;
-
 }
 
 .item {
-
   padding: 20px;
-
 }
 
 .cimg {
-
-  /* max-width: calc(100% - 60px); */
   width: 400px;
   height: auto;
   border: 1px solid darkgrey;
@@ -63,11 +52,8 @@ a {
 .plax {
   /* The image used */
   background-image: url(images/omoss3.png);
-
   /* Full height */
   min-height: 500px;
-
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -76,13 +62,11 @@ a {
 }
 
 form {
-
   border: 1px solid grey;
   padding: 16px;
   border-radius: 1%;
   background-color: #9eb3c2;
   width: 250px;
-
   margin-right: 60px;
 }
 
@@ -117,14 +101,10 @@ iframe {
 
 @media screen and (max-width: 768px) {
   .innerBox {
-
     background-color: lightgrey;
     display: flex;
     flex-direction: column-reverse;
-
-
     padding: 10px;
-
   }
 
   .cimg {
@@ -134,17 +114,12 @@ iframe {
     border: 1px solid darkgrey;
   }
 
-
-
   form {
-
     border: 1px solid grey;
     padding: 16px;
     border-radius: 1%;
     background-color: white;
     width: 250px;
-
-
   }
 
   input[type=text] {
@@ -164,13 +139,11 @@ iframe {
   }
 
   textarea {
-
     width: 240px;
     height: 150px;
   }
 
   iframe {
-
     width: 270px;
     height: auto;
   }
@@ -178,10 +151,8 @@ iframe {
   .plax {
     /* The image used */
     background-image: url(images/omoss3.png);
-
     /* Full height */
     min-height: 500px;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
