@@ -1,6 +1,8 @@
 
-       body {
-            margin: 0;
+      body {
+        margin:0;
+        padding:0;
+        height:100%;
          
         }
         
@@ -273,4 +275,146 @@
 
             }
         }
-   
+/* style big picture */
+        @media 
+        (min-width: 375px) and (max-width: 400px),
+        (min-width: 468px),
+        (-webkit-min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi) {
+      
+
+        #bild {
+            width: 100%;
+             height:auto ;
+            }
+          }
+          
+          /* style first section */
+          section .content {
+            border: 2px solid rgb(109, 132, 155);
+            margin:20px;
+            bottom: 0;
+            background-color: #4895c2;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+          }
+          .content div:hover {
+            text-decoration: underline;
+          }
+          
+          .innercontent{
+            text-align: center;
+            background-color: rgb(31, 83, 113);
+            border-radius: 5px;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+            margin: 5px;
+            flex: 1 1 250px;
+          
+          }
+          
+         .content2 {
+            border: 20px solid rgb(255, 255, 255);
+            margin-bottom: 0em;
+            bottom: 0;
+            background-color: #1F5371;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+          }
+        
+       /* style second section */
+          
+          .innercontent2{
+            text-align: center;
+            background-color: rgb(98, 158, 188);
+            border-radius: 5px;
+            padding: 10px;
+            color:white;
+            font-weight: bold;
+            margin: 5px;
+            flex: 1 1 300px;
+          
+          }
+          .para {
+          text-align: left;
+          color: rgb(98, 158, 188);
+          }
+          .info{
+              padding: 0;
+          }
+          .info :hover {
+            text-decoration: underline;
+          }
+          .info li{
+            
+              text-align: center ;
+              width: 100%;
+          }
+
+/* style of third section.. the section with 3 immage*/
+#picture {
+width:30%;
+margin:20px;
+}
+.content3{
+    margin: 20px;
+}
+.container{
+    background-color: rgb(98, 158, 188);
+    display:flex;
+    flex-direction: row;
+    
+}
+
+
+
+
+   /* height for youtube icon */
+.sociale {
+    height: 25px;
+  }
+  /* footer design */
+  footer {
+    position: relative; 
+    width: 100%;
+    bottom: 0;
+  }
+  .wrapper {
+    border: 2px solid rgb(86,98,110);
+    margin-bottom: 0em;
+    bottom: 0;
+    background-color: #1F5371;
+    padding: 10px;
+  }
+  .wrapper > div {
+    
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+  }
+  
+  
+  .flex {
+     display: flex;
+     flex-wrap: wrap;
+  }
+  .flex > * {
+    flex: 1 1 250px;
+  }
+  li {
+    list-style-type: none;
+    padding: 10px ;
+  }
+  .wrapper li:hover {
+    text-decoration: underline;
+    
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+  }
+  
