@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+  
+body {
+  width: 100vw;
+  overflow: hidden;
+}
+  
+.hero {
+  display: block;
+  height: 70vh;
+  width: 100vw;
+
+  &__img {
+
+    display: none;
+    width: 100vw;
+    object-fit: cover;
+    height: 100px;
+  }  
+
+}
