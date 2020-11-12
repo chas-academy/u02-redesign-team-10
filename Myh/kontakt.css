@@ -1,5 +1,18 @@
 /* background-color: #1F5371; */
 /* background-color: #629ebc; */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p,
+a {
+  font-family: 'EB Garamond', serif;
+  font-size: 18px;
+}
+
 a {
   text-decoration: none;
 }
