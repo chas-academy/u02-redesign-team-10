@@ -1,19 +1,92 @@
 ul {
-  text-align: left;
-  background-color: rgb(157, 223, 219);
+	text-align: left;
+	background-color: #1f5371;
 }
 ul > li {
-  display: inline-block;
-  padding: 10px 12px;
+	display: inline-block;
+	padding: 10px 12px;
 }
 ul > li > a {
-  color: black;
-  font-family: "Helvetica", Arial, sans-serif;
-  text-decoration: none;
+	color: black;
+	font-family: 'Helvetica', Arial, sans-serif;
+	text-decoration: none;
 }
 .navbar {
-  position: relative;
-  /* default colors + transition */
+	position: relative;
+	/* default colors + transition */
 
-  transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+.evenBox {
+	background-color: #1f5371;
+}
+
+.head-container {
+	background-color: lightgrey;
+	padding: 50px 20px;
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 1px 1px 0.5px grey;
+}
+
+.box-container {
+	background-color: #629ebc;
+	padding: 10px 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+	.box-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.box-item {
+	background-color: lightgrey;
+	padding: 20px 20px;
+	box-shadow: 0.5px 0.5px 0.5px grey;
+	border-radius: 5px;
+
+	flex: 30%;
+}
+
+.item-1 {
+	background-color: white;
+	margin: 10px;
+	padding: 10px 10px;
+}
+
+.item-2 {
+	background-color: lightgrey;
+	margin: 10px;
+	padding: 10px 10px;
+}
+
+.item-3 {
+	background-color: white;
+	margin: 10px;
+	padding: 10px 10px;
+}
+
+.item-4 {
+	background-color: lightgrey;
+	margin: 10px;
+	padding: 10px 10px;
+}
+
+.item-5 {
+	background-color: white;
+	margin: 10px;
+	padding: 10px 10px;
+}
+
+.item-6 {
+	background-color: lightgrey;
+	margin: 10px;
+	padding: 10px 10px;
 }
