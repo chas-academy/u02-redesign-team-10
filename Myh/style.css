@@ -1,4 +1,7 @@
 /* Header and Navbar */
+*{
+  padding:0;
+}
 h1,
 h2,
 h3,
@@ -8,6 +11,7 @@ h4 {
 
 html, body {
   overflow-x: hidden;
+ 
 }
 
 p,
@@ -435,7 +439,7 @@ width: 100%;
 bottom: 0;
 }
 .wrapper {
-border: 2px solid rgb(86,98,110);
+border: 3px solid rgb(86,98,110);
 margin-bottom: 0em;
 bottom: 0;
 background-color: #1F5371;
@@ -458,9 +462,9 @@ flex-wrap: wrap;
 .flex > * {
 flex: 1 1 250px;
 }
-li {
+.lista {
 list-style-type: none;
-padding: 10px ;
+padding: 10;
 }
 .wrapper li:hover {
 text-decoration: underline;
@@ -871,6 +875,8 @@ iframe{
 
 
 /* kantakta oss */
+
+
 /* background-color: #1F5371; */
 /* background-color: #629ebc; */
 
