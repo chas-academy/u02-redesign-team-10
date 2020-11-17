@@ -1086,9 +1086,14 @@ ul > li > a {
 .head-container {
 	background-color: lightgrey;
 	padding: 50px 20px;
-	display: flex;
+  display: flex;
+  flex-direction: column;
 	flex-wrap: wrap;
 	box-shadow: 1px 1px 0.5px grey;
+}
+
+.head-container h1 {
+  margin: 0;
 }
 
 .box-container {
