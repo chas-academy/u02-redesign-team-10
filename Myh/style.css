@@ -325,12 +325,17 @@ body {
   (-webkit-min-device-pixel-ratio: 2), 
   (min-resolution: 192dpi) {
 
-
+  #secbild  {
+    display: block;
+    height: 80vh;
+  }
   #bild {
-      width: 100%;
-       height:auto ;
+       height: 100%;
+       width: 100%;
+       object-fit: cover;
+       display:block;
       }
-    }
+    
     
     /* style first section */
     section .content {
